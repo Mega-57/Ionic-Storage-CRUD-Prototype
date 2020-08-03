@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-
+import { Storage, IonicStorageModule } from "@ionic/storage";
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -12,7 +12,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    IonicStorageModule,
+    Storage
   ],
   declarations: [HomePage]
 })
